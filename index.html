@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XSS Test</title>
+    <title>XSS PoC</title>
 </head>
 <body>
     <h1>XSS Test</h1>
-    <p>If the site is vulnerable to XSS, this test should execute the script.</p>
+    <p>If the site is vulnerable, this test should demonstrate XSS.</p>
+    <iframe src="https://altar-admin.stage.guildofguardians.com" width="600" height="400"></iframe>
     <script>
+        // This script should execute if the site is vulnerable
         document.body.innerHTML += '<p style="color:red;">XSS Test: If you see this, the site is vulnerable.</p>';
     </script>
 </body>
