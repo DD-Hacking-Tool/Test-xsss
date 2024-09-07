@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSS Test</title>
+</head>
+<body>
+    <h1>XSS Test</h1>
+    <p>If the site is vulnerable to XSS, this test should execute the script.</p>
+    <script>
+        document.body.innerHTML += '<p style="color:red;">XSS Test: If you see this, the site is vulnerable.</p>';
+    </script>
+</body>
+</html>
